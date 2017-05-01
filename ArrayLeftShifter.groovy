@@ -3,6 +3,7 @@ class ArrayLeftShifter {
     static void main(String[] args) {
 
         int[] input_array = [ 1, 2, 3, 4, 5 ]
+	int[] result_array = new int[input_array.size()]
         int k = 6
         int n = input_array.size()
 
@@ -11,11 +12,11 @@ class ArrayLeftShifter {
 
         if(k == 0)
         {
-            int[] result_array = input_array.clone()
+            result_array = input_array.clone()
         }
         else
         {
-            int[] result_array = LeftShift(input_array, k)
+            result_array = LeftShift(input_array, k)
         }
 
         println("Input Array: ")
