@@ -26,7 +26,7 @@ namespace ConsoleApp2
             }
             else
             {
-                result_array = leftShift(input_array, k);
+                result_array = LeftShift(input_array, k);
             }
             
             Console.Write("Input Array: ");
@@ -46,7 +46,7 @@ namespace ConsoleApp2
         }
 
         // Left shift k times
-        static int[] leftShift(int[] input_array, int k)
+        static int[] LeftShift(int[] input_array, int k)
         {
             int[] result_array = new int[input_array.Length];
 
